@@ -1,0 +1,10 @@
+apiVersion: nginx.testing/v1
+kind: Nginx
+metadata:
+  labels:
+    app.kubernetes.io/name: kubernetes-operator
+    app.kubernetes.io/managed-by: kustomize
+  name: nginx-sample
+spec:
+  replicas: 1
+  image: nginxdemos/hello:plain-text
