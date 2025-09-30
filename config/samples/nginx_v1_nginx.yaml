@@ -7,4 +7,4 @@ metadata:
   name: nginx-sample
 spec:
   replicas: 2
-  image: docker run -d -p 8080:80 --name iamfoo traefik/whoami
+  image: traefik/whoami
